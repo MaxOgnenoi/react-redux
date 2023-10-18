@@ -1,7 +1,7 @@
-import FetchedPosts from "./components/FetchedPosts";
-import PostForm from "./components/PostForm";
-import Posts from "./components/Posts";
-
+import React from 'react';
+import PostForm from './components/PostForm'
+import Posts from './components/Posts'
+import FetchedPosts from './components/FetchedPosts'
 
 function App() {
   return (
@@ -13,13 +13,11 @@ function App() {
       </div>
       <div className="row">
         <div className="col">
-          <h2>Synchronized posts</h2>
+          <h2>Синхронные Посты</h2>
           <Posts />
         </div>
-      </div>
-      <div className="row">
         <div className="col">
-        <h2>Asynchronized posts</h2>
+          <h2>Асинхронные посты</h2>
           <FetchedPosts />
         </div>
       </div>
